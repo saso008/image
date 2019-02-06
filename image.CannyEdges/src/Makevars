@@ -1,2 +1,2 @@
 PKG_LIBS = -lfftw3 -lm
-PKG_CPPFLAGS = -lfftw3 -lm
+PKG_CPPFLAGS = 
