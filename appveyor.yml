@@ -20,6 +20,8 @@ install:
   - lib.exe /machine:x64 /def:libfftw3l-3.def
   - cd %APPVEYOR_BUILD_FOLDER%
   - "set PATH=C:\\fftw;%PATH%"
+  - cmd: Rscript -e "print(list.files('C:\\fftw', recursive = TRUE))"
+
 
 cache:
 - C:\RLibrary
