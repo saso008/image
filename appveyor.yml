@@ -15,7 +15,9 @@ install:
   - 7z x fftw-3.3.4-dll64.zip -oC:\fftw > null
   - cd C:\fftw
   - "set PATH=C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\bin;%PATH%"
-  - lib /def:libfftw3f-3.def
+  - lib.exe /machine:x64 /def:libfftw3-3.def
+  - lib.exe /machine:x64 /def:libfftw3f-3.def
+  - lib.exe /machine:x64 /def:libfftw3l-3.def
   - cd %APPVEYOR_BUILD_FOLDER%
   - "set PATH=C:\\fftw;%PATH%"
 
