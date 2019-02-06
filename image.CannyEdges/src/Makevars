@@ -1,4 +1,4 @@
 PKG_CFLAGS = -std=c99
 PKG_LIBS = -lfftw3 -lm
-PKG_CPPFLAGS = 
+PKG_CPPFLAGS = -I"c:/fftw"
 
