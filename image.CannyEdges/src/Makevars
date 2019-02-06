@@ -1,1 +1,2 @@
-PKG_LIBS = -lpng -lfftw3 -lm 
+CXX_STD = CXX11
+PKG_LIBS = -lfftw3
