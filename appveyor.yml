@@ -11,7 +11,6 @@ install:
   - cmd: Rscript -e "getOption('repos')"
   - cmd: Rscript -e "install.packages('remotes'); remotes::install_github('bnosac-dev/tic');"
 # Download FFTW3
-  - Powershell.exe -File appveyor_install_fftw.ps1 
   - C:\MinGW\msys\1.0\bin\wget -q ftp://ftp.fftw.org/pub/fftw/fftw-3.3.4-dll64.zip
   - 7z x fftw-3.3.4-dll64.zip -oC:\fftw > null
   - cd C:\fftw
